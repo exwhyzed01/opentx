@@ -1164,6 +1164,7 @@ void registerOpenTxFirmwares()
 
   /* 9x board with M128 chip */
   firmware = new OpenTxFirmware("opentx-9x128", QObject::tr("M128 / 9X board"), BOARD_M128);
+  addOpenTxLcdOptions(firmware);
   firmware->addOptions(ext_options);
   firmware->addOption("heli", QObject::tr("Enable heli menu and cyclic mix support"));
   firmware->addOption("templates", QObject::tr("Enable TEMPLATES menu"));
